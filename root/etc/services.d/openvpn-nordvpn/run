@@ -1,0 +1,5 @@
+#!/usr/bin/with-contenv bash
+
+/usr/sbin/openvpn \
+	--config "/defaults/ovpn_${NORDVPN_PROTOCOL}/${NORDVPN_ENDPOINT}.nordvpn.com.${NORDVPN_PROTOCOL}.ovpn" \
+	--auth-user-pass /auth.txt
